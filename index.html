@@ -3,104 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curriculum Vitae</title>
+<title>Curriculum Vitae - Patrik Pluderi</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 60px auto;
-    background: #111827;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    display: grid;
-    grid-template-columns: 300px 1fr;
-}
-
-.sidebar {
-    background: linear-gradient(180deg, #1e293b, #020617);
-    padding: 40px 25px;
-}
-
-.sidebar h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.sidebar p {
-    font-size: 14px;
-    color: #9ca3af;
-}
-
-.section {
-    margin-top: 30px;
-}
-
-.section h2 {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #38bdf8;
-    margin-bottom: 10px;
-}
-
-.section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-.main {
-    padding: 50px;
-}
-
-.block {
-    margin-bottom: 40px;
-}
-
-.block h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #374151;
-    padding-bottom: 5px;
-}
-
-.item {
-    margin-bottom: 15px;
-}
-
-.item strong {
-    display: block;
-    font-weight: 500;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-    color: #6b7280;
-    border-top: 1px solid #374151;
-}
-
-@media(max-width: 800px) {
-    .container {
-        grid-template-columns: 1fr;
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #0f172a;
+        color: #e5e7eb;
+        line-height: 1.5;
     }
-}
 
+    .container {
+        max-width: 1000px;
+        margin: 60px auto;
+        background: #111827;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+
+    .sidebar {
+        background: linear-gradient(180deg, #1e293b, #020617);
+        padding: 40px 25px;
+        border-right: 1px solid #374151;
+    }
+
+    .sidebar h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .sidebar p {
+        font-size: 14px;
+        color: #9ca3af;
+        margin: 5px 0;
+    }
+
+    .section {
+        margin-top: 30px;
+    }
+
+    .section h2 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #38bdf8;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+        padding-bottom: 5px;
+    }
+
+    .section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .section ul li {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    /* Stile per i cerchi delle lingue */
+    .languages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .lang {
+        text-align: center;
+        width: 60px;
+    }
+    .lang p {
+        font-size: 11px;
+        margin-top: 5px;
+        color: #fff;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #38bdf8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+
+    .main {
+        padding: 50px;
+    }
+
+    .block {
+        margin-bottom: 40px;
+    }
+
+    .block h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #374151;
+        padding-bottom: 5px;
+        color: #38bdf8;
+    }
+
+    .item {
+        margin-bottom: 25px;
+    }
+
+    .item strong {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .item span {
+        display: block;
+        font-size: 13px;
+        color: #9ca3af;
+        margin-bottom: 10px;
+    }
+
+    .item p {
+        font-size: 14px;
+        white-space: pre-line; /* Mantiene la formattazione degli a capo */
+        margin: 0;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+        color: #6b7280;
+        border-top: 1px solid #374151;
+        grid-column: span 2;
+    }
+
+    @media(max-width: 800px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+        .footer {
+            grid-column: span 1;
+        }
+    }
 </style>
 </head>
 <body>
@@ -117,14 +170,14 @@ body {
             <ul>
                 <li>Telefono: +39 3403730326</li>
                 <li>Email: patrikpluderi@gmail.com</li>
-                <li>Residenza: Via XXV Aprile, 12 – 20016 Pero (MI) </li>
+                <li>Residenza: Via XXV Aprile, 12 – 20016 Pero (MI)</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Skills</h2>
             <ul>
-                <li>CONOSCENZA PACCHETTO MICROSOFT OFFICE 2017 </li>
+                <li>CONOSCENZA PACCHETTO MICROSOFT OFFICE 2017</li>
                 <li>CONOSCENZA PROGRAMMA HOTEL++ / CRS – SOC.GP DATI</li>
                 <li>CONOSCENZA PROGRAMMA PROTEL – SOC.SERENISSIMA INFORMATICA</li>
                 <li>CONOSCENZA PROGRAMMA PMS OPERA</li>
@@ -132,35 +185,30 @@ body {
         </div>
 
         <div class="section">
-    <h2>Lingue</h2>
-    <div class="languages">
-
-        <div class="lang">
-            <p>Italiano</p>
-            <div class="circle" data-percent="100">100%</div>
+            <h2>Lingue</h2>
+            <div class="languages">
+                <div class="lang">
+                    <div class="circle">100%</div>
+                    <p>Italiano</p>
+                </div>
+                <div class="lang">
+                    <div class="circle">80%</div>
+                    <p>Inglese</p>
+                </div>
+                <div class="lang">
+                    <div class="circle">50%</div>
+                    <p>Francese</p>
+                </div>
+                <div class="lang">
+                    <div class="circle">50%</div>
+                    <p>Tedesco</p>
+                </div>
+                <div class="lang">
+                    <div class="circle">50%</div>
+                    <p>Spagnolo</p>
+                </div>
+            </div>
         </div>
-
-        <div class="lang">
-            <p>Inglese</p>
-            <div class="circle" data-percent="80">80%</div>
-        </div>
-
-        <div class="lang">
-            <p>Francese</p>
-            <div class="circle" data-percent="50">50%</div>
-        </div>
-
-        <div class="lang">
-            <p>Tedesco</p>
-            <div class="circle" data-percent="50">50%</div>
-        </div>
-
-        <div class="lang">
-            <p>Spagnolo</p>
-            <div class="circle" data-percent="50">50%</div>
-        </div>
-
-    </div>
 
         <div class="section">
             <h2>Patenti</h2>
@@ -175,157 +223,104 @@ body {
         <div class="block">
             <h2>Studi</h2>
             <div class="item">
-                <span>
-• Date (da – a) Settembre 1995 – Dicembre 1995
-• Nome e tipo di istituto di
-istruzione o formazione : I.P.S.S.A.R. “Carlo Porta”
-• Principali materie / abilità
-professionali oggetto dello studio: Meeting e Congressi, Inglese.
-• Qualifica conseguita: Attestato di frequenza.
-• Date (da – a) Settembre 1990 – Luglio 1995
-• Nome e tipo di istituto di
-istruzione o formazione: I.P.S.S.A.R. “Carlo Porta”
-• Principali materie / abilità
-professionali oggetto dello studio: Segreteria d’Albergo, Economia Aziendale, Inglese.
-• Qualifica conseguita: Diploma in Tecnico dei Servizi Turistico-Alberghieri di Portineria, Segreteria e Cassa d’Albergo.
-• Risultato conseguito:58/60</span>
+                <p>• Date (da – a) Settembre 1995 – Dicembre 1995
+                • Nome e tipo di istituto di istruzione o formazione : I.P.S.S.A.R. “Carlo Porta”
+                • Principali materie / abilità professionali oggetto dello studio: Meeting e Congressi, Inglese.
+                • Qualifica conseguita: Attestato di frequenza.
+                
+                • Date (da – a) Settembre 1990 – Luglio 1995
+                • Nome e tipo di istituto di istruzione o formazione: I.P.S.S.A.R. “Carlo Porta”
+                • Principali materie / abilità professionali oggetto dello studio: Segreteria d’Albergo, Economia Aziendale, Inglese.
+                • Qualifica conseguita: Diploma in Tecnico dei Servizi Turistico-Alberghieri di Portineria, Segreteria e Cassa d’Albergo.
+                • Risultato conseguito: 58/60</p>
             </div>
         </div>
 
         <div class="block">
             <h2>Esperienze Lavorative</h2>
             <div class="item">
-                <p>•Date (da-a):
-20/01/2025 - attuale
-•Nome e indirizzo del datore di
-lavoro:
-Starhotels Spa – Starhotel Grand Milan Saronno – Via Varese, 23 – 21047 Saronno (VA)
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-General Manager
-•Principali mansioni e
-responsabilità:
-Controllo risultati di gestione e applicazione standard Starhotels
-Controllo attività giornaliere, mensili e annuali di entrambe le strutture Responsabilità della gestione del personale e della customer satisfaction degli Ospiti
-Responsabilità e controllo reparto Manutenzione e Housekeeping
-Selezione del personale
-•Date (da-a):
-16/09/2024- 19/01/2025
-•Nome e indirizzo del datore di
-lavoro:
-Holiday InnMilan Garibaldi – Via U. Bassi, 1 – Milano & Holiday Inn Nord Zara –Via Cornaggia,44 – Cinisello Balsamo (MI) – GRUPPO CHC
-                  •Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Cluster General ManagerMilano
-•Principali mansioni e
-responsabilità:
-Controllo risultati di gestione e applicazione standard IHG Group s Gruppo CHC Controllo attività giornaliere, mensili e annuali di entrambe le strutture Responsabilità della gestione del personale e della customer satisfaction degli Ospiti
-Responsabilità e controllo reparto Manutenzione e Housekeeping
-•Date (da-a):
-15/03/2022-15/09/2024
-•Nome e indirizzo del datore di
-lavoro:
-Unahotels Varese by Piazza Hotels & Residences**** - Via F. Albani, 73 – 21100 Varese (VA)
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego
-Hotel Manager
-•Principali mansioni e
-responsabilità
-Ho partecipato attivamente alla riapertura della struttura sotto la nuova gestione dopo due anni di chiusura per Covid.
-Responsabilità e controllo dell’ufficio Mice, Front /Back Office
-Responsabilità e controllo Booking gruppi leasure, congressuali e delegazioni fieristiche Responsabilità e controllo reparto Manutenzione e Housekeeping
-Controllo e redazione orari dei reparti
-Controllo e gestione delle convezioni delle aziende corporate della zon Responsabilità e controllo Revenue di struttura e competitor’s check 
-Funzioni di Duty Manager.
-•Date (da-a):
-03/11/2008-31/08/2018
-•Nome e indirizzo del datore di
-lavoro:
-Atahotel Expo Fiera **** - ViaGiovanni Keplero, 12 – 20016Pero (MI)
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Front-Office Manager con funzioni di Duty Manager
-•Principali mansioni e
-responsabilità:
-Contributo attivo ed operativo all’apertura di albergo di 462 camere, 2 sale da 1.000
-posti e 1 sala da 600 posti
-Responsabilità e controllo del Front /Back Office
-Responsabilità e controllo Booking gruppi leasure, congressuali e delegazioni fieristiche Controllo e redazione orari dei reparti
-Controllo e gestione delle commissioni agenzie
-Responsabilità e controllo Revenue di struttura e competitor’s check
-•Date (da-a):
-18/04/2006-02/11/2008
-•Nome e indirizzo del datore di
-lavoro:
-Atahotel Fieramilano **** - VialeS. Boezio, 20 - 20145Milano
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Front-Office Manager con funzioni di Duty Manager
-•Principali mansioni e
-responsabilità:
-Responsabilità e controllo del Front /Back Office e Booking Controllo e redazione orari dei reparti
-Controllo e gestione delle commissioni agenzie
-•Date (da-a):
-01/03/2004-17/04/2006
-•Nome e indirizzo del datore di
-lavoro:
-Carola S.r.l. – Hoteldei Cavalieri ****- Piazza Missori, 1 – 20123Milano
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Front-Office Manager
-•Principali mansioni e
-responsabilità:
-Responsabilità e controllo del Front e Back Office Controllo e redazione orari del reparto
-Controllo e gestione delle commissioni agenzie
-Funzioni di Duty Manager.
-•Date (da-a):
-01/06/2001-01/03/2004
-•Nome e indirizzo del datore di
-lavoro:
-Carola S.r.l.– Hotel dei Cavalieri **** - PiazzaMissori, 1 – 20123 Milano
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Receptionist
-•Principali mansioni e
-responsabilità:
-Attività di Front e Back Office
-Controllo e gestione delle commissioni agenzie.
-•Date (da-a):
-01/11/1997-01/06/2001
-•Nome e indirizzo del datore di
-lavoro:
-Ecce S.p.A. – Hotel Michelangelo**** - Via Scarlatti, 33 – 20100 Milano
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Events Manager
-•Principali mansioni e
-responsabilità:
-Organizzazione meeting e convegni
-Redazione e compilazione ordini di servizio, offertazione camere e spazi meeting
-•Date (da-a):
-01/01/1996-31/10/1997
-•Nome e indirizzo del datore di
-lavoro:
-Ecce S.p.A. – Hotel Michelangelo**** - Via Scarlatti, 33 – 20100 Milano
-•Tipo di azienda o settore:
-Turismo
-•Tipo di impiego:
-Receptionist
-•Principali mansioni e
-responsabilità:
-Attività di Front e Back Office
-Controllo e gestione delle commissioni agenzie.
- 
+                <p>•Date (da-a): 20/01/2025 - attuale
+                •Nome e indirizzo del datore di lavoro: Starhotels Spa – Starhotel Grand Milan Saronno – Via Varese, 23 – 21047 Saronno (VA)
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: General Manager
+                •Principali mansioni e responsabilità:
+                Controllo risultati di gestione e applicazione standard Starhotels
+                Controllo attività giornaliere, mensili e annuali di entrambe le strutture Responsabilità della gestione del personale e della customer satisfaction degli Ospiti
+                Responsabilità e controllo reparto Manutenzione e Housekeeping
+                Selezione del personale
 
-</p>
+                •Date (da-a): 16/09/2024- 19/01/2025
+                •Nome e indirizzo del datore di lavoro: Holiday InnMilan Garibaldi – Via U. Bassi, 1 – Milano & Holiday Inn Nord Zara –Via Cornaggia,44 – Cinisello Balsamo (MI) – GRUPPO CHC
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Cluster General ManagerMilano
+                •Principali mansioni e responsabilità:
+                Controllo risultati di gestione e applicazione standard IHG Group s Gruppo CHC Controllo attività giornaliere, mensili e annuali di entrambe le strutture Responsabilità della gestione del personale e della customer satisfaction degli Ospiti
+                Responsabilità e controllo reparto Manutenzione e Housekeeping
+
+                •Date (da-a): 15/03/2022-15/09/2024
+                •Nome e indirizzo del datore di lavoro: Unahotels Varese by Piazza Hotels & Residences**** - Via F. Albani, 73 – 21100 Varese (VA)
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Hotel Manager
+                •Principali mansioni e responsabilità:
+                Ho partecipato attivamente alla riapertura della struttura sotto la nuova gestione dopo due anni di chiusura per Covid.
+                Responsabilità e controllo dell’ufficio Mice, Front /Back Office
+                Responsabilità e controllo Booking gruppi leasure, congressuali e delegazioni fieristiche Responsabilità e controllo reparto Manutenzione e Housekeeping
+                Controllo e redazione orari dei reparti
+                Controllo e gestione delle convezioni delle aziende corporate della zon Responsabilità e controllo Revenue di struttura e competitor’s check 
+                Funzioni di Duty Manager.
+
+                •Date (da-a): 03/11/2008-31/08/2018
+                •Nome e indirizzo del datore di lavoro: Atahotel Expo Fiera **** - ViaGiovanni Keplero, 12 – 20016Pero (MI)
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Front-Office Manager con funzioni di Duty Manager
+                •Principali mansioni e responsabilità:
+                Contributo attivo ed operativo all’apertura di albergo di 462 camere, 2 sale da 1.000
+                posti e 1 sala da 600 posti
+                Responsabilità e controllo del Front /Back Office
+                Responsabilità e controllo Booking gruppi leasure, congressuali e delegazioni fieristiche Controllo e redazione orari dei reparti
+                Controllo e gestione delle commissioni agenzie
+                Responsabilità e controllo Revenue di struttura e competitor’s check
+
+                •Date (da-a): 18/04/2006-02/11/2008
+                •Nome e indirizzo del datore di lavoro: Atahotel Fieramilano **** - VialeS. Boezio, 20 - 20145Milano
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Front-Office Manager con funzioni di Duty Manager
+                •Principali mansioni e responsabilità:
+                Responsabilità e controllo del Front /Back Office e Booking Controllo e redazione orari dei reparti
+                Controllo e gestione delle commissioni agenzie
+
+                •Date (da-a): 01/03/2004-17/04/2006
+                •Nome e indirizzo del datore di lavoro: Carola S.r.l. – Hoteldei Cavalieri ****- Piazza Missori, 1 – 20123Milano
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Front-Office Manager
+                •Principali mansioni e responsabilità:
+                Responsabilità e controllo del Front e Back Office Controllo e redazione orari del reparto
+                Controllo e gestione delle commissioni agenzie
+                Funzioni di Duty Manager.
+
+                •Date (da-a): 01/06/2001-01/03/2004
+                •Nome e indirizzo del datore di lavoro: Carola S.r.l.– Hotel dei Cavalieri **** - PiazzaMissori, 1 – 20123 Milano
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Receptionist
+                •Principali mansioni e responsabilità:
+                Attività di Front e Back Office
+                Controllo e gestione delle commissioni agenzie.
+
+                •Date (da-a): 01/11/1997-01/06/2001
+                •Nome e indirizzo del datore di lavoro: Ecce S.p.A. – Hotel Michelangelo**** - Via Scarlatti, 33 – 20100 Milano
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Events Manager
+                •Principali mansioni e responsabilità:
+                Organizzazione meeting e convegni
+                Redazione e compilazione ordini di servizio, offertazione camere e spazi meeting
+
+                •Date (da-a): 01/01/1996-31/10/1997
+                •Nome e indirizzo del datore di lavoro: Ecce S.p.A. – Hotel Michelangelo**** - Via Scarlatti, 33 – 20100 Milano
+                •Tipo di azienda o settore: Turismo
+                •Tipo di impiego: Receptionist
+                •Principali mansioni e responsabilità:
+                Attività di Front e Back Office
+                Controllo e gestione delle commissioni agenzie.</p>
             </div>
         </div>
 
